@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@bull-board/api": "^5.0.1",
+    "@bull-board/fastify": "^5.0.1",
     "@prisma/client": "^4.13.0",
     "bull": "^4.10.4",
     "fastify": "^4.15.0"
