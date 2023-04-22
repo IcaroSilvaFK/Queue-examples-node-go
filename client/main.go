@@ -29,7 +29,8 @@ func sendRequest() {
 	for i := 0; i < 500; i++ {
 		payload := `{"count": 1}`
 		//queue
-		req, _ := http.NewRequest("POST", "http://localhost:8000/queue", strings.NewReader(payload))
+		//http://localhost:8000/queue
+		req, _ := http.NewRequest("POST", "http://localhost:8000/counter", strings.NewReader(payload))
 
 		req.Header.Add("Content-type", "application/json")
 		client.Do(req)
